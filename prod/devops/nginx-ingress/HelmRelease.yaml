@@ -17,6 +17,9 @@ spec:
         tag: 0.26.1
       service:
         type: NodePort
+        nodePorts:
+          http: 80
+          https: 443
       # metrics:
       #   enabled: true
       #   serviceMonitor:
