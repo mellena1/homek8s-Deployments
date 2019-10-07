@@ -15,11 +15,9 @@ spec:
       image:
         repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
         tag: 0.26.1
-      service:
-        type: NodePort
-        nodePorts:
-          http: 80
-          https: 443
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
+      reportNodeInternalIp: true
       # metrics:
       #   enabled: true
       #   serviceMonitor:
