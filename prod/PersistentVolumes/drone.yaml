@@ -13,5 +13,5 @@ spec:
   nfs:
     server: 192.168.1.200
     path: "/nas/drone"
-  persistentVolumeReclaimPolicy: Delete
+  persistentVolumeReclaimPolicy: Recycle
 ...
