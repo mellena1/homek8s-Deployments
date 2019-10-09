@@ -20,7 +20,9 @@ spec:
       secret: claim-token
     persistence:
       data:
-        existingClaim: plex
+        claimName: plex
+      config:
+        claimName: plex-config
     ingress:
       enabled: false  # TODO: maybe enable this
       annotations:
