@@ -17,7 +17,7 @@ spec:
     kubePlex:
       enabled: false
     claimToken:
-      secret: claimToken
+      secret: claim-token
     persistence:
       data:
         existingClaim: plex
