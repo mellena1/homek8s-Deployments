@@ -1,0 +1,37 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: plex
+  namespace: plex
+spec:
+  releaseName: plex
+  chart:
+    repository: https://charts.andrewmellen.org/
+    name: kube-plex
+    version: 0.2.4
+  values:
+    images:
+      repository: plexinc/pms-docker
+      tag: "1.10.1.4602-f54242b6b"
+    kubePlex:
+      enabled: false
+    claimToken:
+      secret: claimToken
+    persistence:
+      data:
+        existingClaim: plex
+    ingress:
+      enabled: false  # TODO: maybe enable this
+      annotations:
+        ingress.kubernetes.io/ssl-redirect: "true"
+        kubernetes.io/tls-acme: "true"
+        certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+        kubernetes.io/ingress.class: "nginx"
+      tls:
+      - hosts:
+        - plex.andrewmellen.org
+        secretName: plex-letsencrypt-prod
+      hosts:
+      - ci.andrewmellen.org
+...
