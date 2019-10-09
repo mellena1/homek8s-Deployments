@@ -11,7 +11,7 @@ spec:
     name: kube-plex
     version: 0.2.4
   values:
-    images:
+    image:
       repository: plexinc/pms-docker
       tag: "1.17.0.1841-d42cfa161"
     kubePlex:
