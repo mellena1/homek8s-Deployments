@@ -13,7 +13,7 @@ spec:
   values:
     images:
       repository: plexinc/pms-docker
-      tag: "1.10.1.4602-f54242b6b"
+      tag: "1.17.0.1841-d42cfa161"
     kubePlex:
       enabled: false
     claimToken:
