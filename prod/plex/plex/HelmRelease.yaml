@@ -23,6 +23,9 @@ spec:
         claimName: plex
       config:
         claimName: plex-config
+    service:
+      type: NodePort
+      nodePort: 32400
     ingress:
       enabled: true
       annotations:
