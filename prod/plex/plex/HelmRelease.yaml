@@ -24,7 +24,7 @@ spec:
       config:
         claimName: plex-config
     ingress:
-      enabled: false  # TODO: maybe enable this
+      enabled: true
       annotations:
         ingress.kubernetes.io/ssl-redirect: "true"
         kubernetes.io/tls-acme: "true"
@@ -35,5 +35,5 @@ spec:
         - plex.andrewmellen.org
         secretName: plex-letsencrypt-prod
       hosts:
-      - ci.andrewmellen.org
+      - plex.andrewmellen.org
 ...
