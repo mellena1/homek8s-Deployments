@@ -2,16 +2,16 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: plex
+  name: plex-transcode
   labels:
-    app: plex
+    app: plex-transcode
 spec:
   capacity:
-    storage: 2500Gi
+    storage: 250Gi
   accessModes:
     - ReadWriteMany
   nfs:
     server: 192.168.1.200
-    path: "/nas/plex"
+    path: "/nas/plex-transcode"
   persistentVolumeReclaimPolicy: Recycle
 ...

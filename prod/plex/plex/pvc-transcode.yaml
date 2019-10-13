@@ -2,16 +2,16 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: plex-config
+  name: plex-transcode
   namespace: plex
 spec:
   accessModes:
     - ReadWriteMany
   resources:
     requests:
-      storage: 1Gi
+      storage: 250Gi
   storageClassName: ""
   selector:
     matchLabels:
-      app: plex-config
+      app: plex-transcode
 ...

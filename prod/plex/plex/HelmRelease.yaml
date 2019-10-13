@@ -26,6 +26,9 @@ spec:
         claimName: plex
       config:
         claimName: plex-config
+      transcode:
+        enabled: true
+        claimName: plex-transcode
     service:
       type: NodePort
       nodePort: 32400
