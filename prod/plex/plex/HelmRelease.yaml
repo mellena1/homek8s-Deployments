@@ -15,7 +15,10 @@ spec:
       repository: plexinc/pms-docker
       tag: "1.17.0.1841-d42cfa161"
     kubePlex:
-      enabled: false
+      enabled: true
+      image:
+        repository: quay.io/munnerz/kube-plex
+        tag: "latest"
     claimToken:
       secret: claim-token
     persistence:
