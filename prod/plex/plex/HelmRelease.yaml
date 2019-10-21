@@ -15,7 +15,10 @@ spec:
       repository: mellena1/pms-docker
       tag: "1.0.0-1.18.0.1913-e5cc93306"
     kubePlex:
-      enabled: false
+      enabled: true
+      image:
+        repository: quay.io/munnerz/kube-plex
+        tag: "latest"
     claimToken:
       secret: claim-token
     persistence:
@@ -23,6 +26,9 @@ spec:
         claimName: plex
       config:
         claimName: plex-config
+      transcode:
+        enabled: true
+        claimName: plex-transcode
     service:
       type: NodePort
       nodePort: 32400
