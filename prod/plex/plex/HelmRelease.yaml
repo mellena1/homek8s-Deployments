@@ -9,7 +9,7 @@ spec:
   chart:
     repository: https://charts.andrewmellen.org/
     name: kube-plex
-    version: 0.2.4
+    version: 0.3.0
   values:
     image:
       repository: mellena1/pms-docker
@@ -20,6 +20,12 @@ spec:
         repository: quay.io/munnerz/kube-plex
         tag: "latest"
     timezone: America/New_York
+    readinessProbe:
+      initialDelaySeconds: 60
+      timeoutSeconds: 5
+    livenessProbe:
+      initialDelaySeconds: 120
+      timeoutSeconds: 10
     claimToken:
       secret: claim-token
     persistence:
