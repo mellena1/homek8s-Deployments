@@ -10,7 +10,7 @@ spec:
   resources:
     requests:
       storage: 250Gi
-  storageClassName: ""
+  storageClassName: local-storage
   selector:
     matchLabels:
       app: plex-transcode
