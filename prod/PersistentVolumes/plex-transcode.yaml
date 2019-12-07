@@ -14,7 +14,7 @@ spec:
     - ReadWriteMany
   storageClassName: local-storage
   local:
-    path: "/nas/plex-transcode"
+    path: "/mnt/homek8s/plex-transcode"
   nodeAffinity:
     required:
       nodeSelectorTerms:

@@ -14,7 +14,7 @@ spec:
   - ReadWriteOnce
   storageClassName: local-storage
   local:
-    path: "/nas/drone"
+    path: "/mnt/homek8s/drone"
   nodeAffinity:
     required:
       nodeSelectorTerms:

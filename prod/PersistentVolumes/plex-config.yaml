@@ -14,7 +14,7 @@ spec:
     - ReadWriteMany
   storageClassName: local-storage
   local:
-    path: "/opt/plex-config"
+    path: "/mnt/homek8s/plex-config"
   nodeAffinity:
     required:
       nodeSelectorTerms:
