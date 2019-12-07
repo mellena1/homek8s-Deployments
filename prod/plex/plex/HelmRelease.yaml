@@ -9,7 +9,7 @@ spec:
   chart:
     repository: https://charts.andrewmellen.org/
     name: kube-plex
-    version: 0.3.0
+    version: 0.3.1
   values:
     image:
       repository: mellena1/pms-docker
@@ -17,8 +17,8 @@ spec:
     kubePlex:
       enabled: true
       image:
-        repository: quay.io/munnerz/kube-plex
-        tag: "latest"
+        repository: mellena1/kube-plex
+        tag: "0.1.0"
     timezone: America/New_York
     readinessProbe:
       initialDelaySeconds: 60
