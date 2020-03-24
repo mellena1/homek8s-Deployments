@@ -9,12 +9,12 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: nginx-ingress
-    version: 1.24.0
+    version: 1.34.2
   values:
     controller:
       image:
         repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
-        tag: 0.26.1
+        tag: 0.30.0
       hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
       reportNodeInternalIp: true
