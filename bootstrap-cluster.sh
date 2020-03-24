@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Install helm
-echo "Installing helm"
-cd bootstrap/helm
-./install-helm.sh
-cd ../..
-
 # Add secret for sealed-secrets
 echo "Installing sealed-secrets"
 cd bootstrap/sealed-secrets

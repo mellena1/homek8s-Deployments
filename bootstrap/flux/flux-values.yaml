@@ -1,12 +1,7 @@
 ---
-helmOperator:
-  create: true
-  createCRD: true
-  repository: docker.io/fluxcd/helm-operator
-  tag: "0.10.1"
 image:
   repository: docker.io/fluxcd/flux
-  tag: "1.14.2"
+  tag: "1.18.0"
 git:
   url: ssh://git@github.com/mellena1/homek8s-Deployments
   branch: master
