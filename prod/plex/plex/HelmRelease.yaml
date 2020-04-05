@@ -13,7 +13,7 @@ spec:
   values:
     image:
       repository: mellena1/pms-docker
-      tag: "v1.0.0-1.18.9.2578-513b381af"
+      tag: "1.0.0-1.18.9.2578-513b381af"
     kubePlex:
       enabled: true
       image:
