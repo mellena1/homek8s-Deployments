@@ -11,6 +11,9 @@ spec:
     name: cert-manager
     version: v0.14.1
   values:
+    global:
+      leaderElection:
+        namespace: devops
     resources:
       requests:
         memory: 20Mi
