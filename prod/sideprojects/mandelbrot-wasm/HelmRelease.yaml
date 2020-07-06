@@ -30,5 +30,5 @@ spec:
       hosts:
       - host: sideprojects.andrewmellen.org
         paths:
-          - /mandelbrot-wasm(/|$)(.*)
+          - /mandelbrot-wasm/(.*)
 ...
