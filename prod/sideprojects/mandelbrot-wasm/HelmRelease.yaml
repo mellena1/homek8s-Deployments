@@ -26,7 +26,7 @@ spec:
       tls:
       - hosts:
         - sideprojects.andrewmellen.org
-        secretName: mandelbrot-wasm-letsencrypt-prod
+        secretName: sideprojects-letsencrypt-prod
       hosts:
       - host: sideprojects.andrewmellen.org
         paths:
