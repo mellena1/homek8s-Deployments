@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: mellena1/mandelbrot-wasm-ui
-      tag: "0.1.1"
+      tag: "0.1.2"
     nameOverride: mandelbrot-wasm
     ingress:
       enabled: true
@@ -33,5 +33,4 @@ spec:
       hosts:
       - host: sideprojects.andrewmellen.org
         paths:
-          - /mandelbrot-wasm/(.*)
-...
+        - /mandelbrot-wasm/(.*)
