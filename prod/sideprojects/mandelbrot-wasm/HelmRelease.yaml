@@ -4,6 +4,9 @@ kind: HelmRelease
 metadata:
   name: mandelbrot-wasm
   namespace: sideprojects
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:*
 spec:
   releaseName: mandelbrot-wasm
   chart:
