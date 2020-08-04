@@ -31,4 +31,6 @@ spec:
         secretName: destinycalc-letsencrypt-prod
       hosts:
       - host: destinycalc.andrewmellen.org
+        paths:
+          - /
 ...
