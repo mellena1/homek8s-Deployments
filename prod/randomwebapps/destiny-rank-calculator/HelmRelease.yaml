@@ -17,7 +17,7 @@ spec:
     image:
       repository: mellena1/destiny-rank-calculator
       tag: "0.1.0"
-    nameOverride: mellena1/destiny-rank-calculator
+    nameOverride: destiny-rank-calculator
     ingress:
       enabled: true
       annotations:
