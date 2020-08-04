@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: mellena1/destiny-rank-calculator
-      tag: "0.1.0"
+      tag: "0.1.1"
     nameOverride: destiny-rank-calculator
     ingress:
       enabled: true
@@ -32,5 +32,4 @@ spec:
       hosts:
       - host: destinycalc.andrewmellen.org
         paths:
-          - /
-...
+        - /
