@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: mellena1/mandelbrot-wasm-ui
-      tag: "0.1.2"
+      tag: "0.1.3"
     nameOverride: mandelbrot-wasm
     ingress:
       enabled: true
