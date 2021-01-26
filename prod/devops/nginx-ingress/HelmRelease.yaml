@@ -7,13 +7,12 @@ metadata:
 spec:
   releaseName: nginx-ingress
   chart:
-    repository: https://helm.nginx.com/stable/
+    repository: https://kubernetes.github.io/ingress-nginx
     name: nginx-ingress
     version: 3.21.0
   values:
     controller:
       image:
-        repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
         tag: 0.43.0
       hostNetwork: true
       dnsPolicy: ClusterFirstWithHostNet
