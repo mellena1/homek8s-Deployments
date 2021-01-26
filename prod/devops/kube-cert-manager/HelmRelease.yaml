@@ -13,6 +13,7 @@ spec:
   values:
     installCRDs: true
     global:
+      logLevel: 6
       leaderElection:
         namespace: devops
     resources:
