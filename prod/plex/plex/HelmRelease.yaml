@@ -4,6 +4,9 @@ kind: HelmRelease
 metadata:
   name: plex
   namespace: plex
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: glob:*
 spec:
   releaseName: plex
   chart:
@@ -13,7 +16,7 @@ spec:
   values:
     image:
       repository: mellena1/pms-docker
-      tag: "1.0.0-1.20.4.3517-ab5e1197c"
+      tag: "1.0.0-1.22.3.4392-d7c624def"
     kubePlex:
       enabled: true
       image:
